@@ -21,7 +21,7 @@ RCT_EXPORT_METHOD(unzip:(NSString *)zipPath destinationPath:(NSString *)destinat
 
     [self zipArchiveProgressEvent:0 total:1]; // force 0%
 
-    BOOL success = [SSZipArchive unzipFileAtPath:zipPath toDestination:destinationPath delegate:self];
+    BOOL success = [SSZipArchive unzipFileAtPath:zipPath toDestination:destinationPath password:password delegate:self];
 
     [self zipArchiveProgressEvent:1 total:1]; // force 100%
 
