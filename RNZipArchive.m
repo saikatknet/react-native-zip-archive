@@ -17,7 +17,7 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(unzip:(NSString *)zipPath destinationPath:(NSString *)destinationPath callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(unzip:(NSString *)zipPath destinationPath:(NSString *)destinationPath password:(NSString *)password callback:(RCTResponseSenderBlock)callback) {
 
     [self zipArchiveProgressEvent:0 total:1]; // force 0%
 

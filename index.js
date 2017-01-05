@@ -15,8 +15,8 @@ var _error = (err) => {
 }
 
 var ZipArchive = {
-  unzip(source, target) {
-    return _unzip(source, target)
+  unzip(source, target, password) {
+    return _unzip(source, target, password)
       .catch(_error)
   },
   zip(source, target) {
