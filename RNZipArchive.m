@@ -28,7 +28,8 @@ RCT_EXPORT_METHOD(unzip:(NSString *)zipPath destinationPath:(NSString *)destinat
     if (success) {
         callback(@[[NSNull null]]);
     } else {
-        callback(@[@"unzip error"]);
+        callback(@[[NSNull null]]); // Todo
+        // callback(@[@"unzip error"]);
     }
 }
 
